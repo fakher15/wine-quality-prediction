@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import joblib
 
 
-red=pd.read_excel('C:/Users/hp/Desktop/dataset/winequalitywhite.xltx')
+red=pd.read_excel('C:/Users/hp/Desktop/winequalitywhite.xltx')
 
 #Data descriptipn
 red.info()
