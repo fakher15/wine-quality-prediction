@@ -1,0 +1,63 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Make a reservation">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Acceuil</title>
+    <link rel="stylesheet" href="{% static 'css/nicepage.css' %}" media="screen">
+<link rel="stylesheet" href="{% static 'css/Acceuil.css' %}" media="screen">
+    <script class="u-script" type="text/javascript" src="{% static 'js/jquery.js' %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'js/nicepage.js' %}" defer=""></script>
+    <meta name="generator" content="Nicepage 3.17.2, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta property="og:title" content="Acceuil">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#478ac9">
+  </head>
+  <body data-home-page="Acceuil.html" data-home-page-title="Acceuil" class="u-body"><header class="u-clearfix u-header u-header" id="sec-eb6a"><div class="u-clearfix u-sheet u-sheet-1"></div></header>
+    <section class="u-align-center u-clearfix u-white u-section-1" id="carousel_a97e">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-25-lg u-size-25-xl u-size-28-md u-size-28-sm u-size-28-xs u-layout-cell-1">
+                <div class="u-container-layout u-valign-top u-container-layout-1">
+                  <h1 class="u-text u-text-1">Prediction result</h1>
+                  <h3 class="u-text u-text-2">{{answer}}</h3>
+                  <div class="u-palette-3-base u-shape u-shape-circle u-shape-1"></div>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-right-cell u-size-32-md u-size-32-sm u-size-32-xs u-size-35-lg u-size-35-xl u-layout-cell-2">
+                {% if answer in good%}
+                <div class="u-container-layout u-valign-top u-container-layout-2">
+                  <p class="u-custom-font u-heading-font u-text u-text-3">Your wine is good , you can predict another one</p>
+                  {% else%}
+                <div class="u-container-layout u-valign-top u-container-layout-2">
+                  <p class="u-custom-font u-heading-font u-text u-text-3">your wine is not good , you have to change some of your ingredients </p>
+                  {% endif %}
+                  <a href="index.html" class="u-border-2 u-border-white u-btn u-btn-rectangle u-button-style u-none u-btn-1">read more</a>
+                  <a href="{% url 'home'%}" class="u-active-grey-80 u-border-1 u-border-active-grey-80 u-border-black u-border-hover-grey-80 u-btn u-button-style u-hover-grey-80 u-none u-text-active-palette-3-base u-text-black u-text-hover-white u-btn-2">predict another one</a>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </body>
+</html>
