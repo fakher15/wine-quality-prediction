@@ -7,4 +7,6 @@ in classification_model.py file you have to change every path to your's so the m
 
 you can try prediction by using the website created by django , it's a simple form which contains inputs for every ingredient of the wine . <br>
 
+to run the website , please go to my "e-com" repository and follow the instructions in the readme.md file . <br>
+
 thanks for trying this .
